@@ -1,0 +1,135 @@
+@font-face {
+    font-family:'Roboto';
+    src:    url('../fonts/Roboto-Regular-webfont.eot'); 
+    src:    url('../fonts/Roboto-Regular-webfont.woff') format('woff'), 
+            url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+            url('../fonts/Roboto-Regular-webfont.svg') format('svg');
+   }
+
+body {
+    font-family: Roboto; 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: column;
+}
+
+main {
+    width: 50%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-image: url("../img/background.jpg");
+    background-repeat: repeat;
+    background-position: top center;
+}
+
+#juego {
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#circulos {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.C {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#CRojo {
+    background-color: red;
+    margin-top: 5px;
+}
+
+#CBlanco {
+    background-color: white;
+    margin-top: 20px;
+}
+
+#CNegro {
+    background-color: black;
+    margin-top: 20px;
+}
+
+#CAmarillo {
+    background-color: yellow;
+    margin-top: 20px;
+}
+
+#CNaranja {
+    background-color: orange;
+    margin-top: 20px;
+}
+
+#CMarron {
+    background-color: brown;
+    margin-top: 20px;
+}
+
+#CAzul {
+    background-color: blue;
+    margin-top: 20px;
+}
+
+#CVerde {
+    background-color: green;
+    margin-top: 20px;
+}
+
+#check {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+}
+
+#check:hover {
+    cursor: pointer;
+}
+
+#csPintar, #csCheck {
+    display: inline-block;
+}
+
+.cPintar {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.cCheck {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border: 1px solid;
+    display: inline-block;
+    margin: 20px;
+}
+
+#mensaje {
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 800px;
+    text-align: center;
+}
+
+#mensaje h2 {
+    font-size: 2em;
+}
+
+#mensaje a {
+    text-decoration: none;
+    cursor: pointer;
+}
